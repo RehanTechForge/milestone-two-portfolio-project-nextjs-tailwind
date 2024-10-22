@@ -11,10 +11,30 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        primaryColor: "var(--primaryColor)"
+        primaryColor: "var(--primaryColor)",
+        secondaryColor: "var(--secondaryColor)",
+      },
+      fontFamily: {
+        heading: ["var(--font-heading)"], // Poppins for headings
+        body: ["var(--font-body)"], // Raleway for body
+        logo: ["var(--font-logo)"],
+      },
+      backgroundImage: {
+        "gradient-custom": "linear-gradient(to top, #FF9C1A, #ED250A)",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }: any) {
+      addUtilities({
+        ".text-gradient": {
+          backgroundImage: "linear-gradient(to top, #FF9C1A, #ED250A)", // Gradient from orange to red
+          backgroundClip: "text", // Clips the background to the text
+          WebkitBackgroundClip: "text", // For Safari
+          color: "transparent", // Makes the text transparent
+        },
+      });
+    },
+  ],
 };
 export default config;
