@@ -10,7 +10,7 @@ export default function Home() {
         <div className="h-1 ml-10 max-w-[300px] sm:col-span-4 bg-gradient-to-r from-primaryColor to-secondaryColor"></div>
       </div>
       <p className="font-body text-[16px] mt-5 font-medium">
-        Hello there! I'm thrilled to welcome you to my portfolio. I am a
+        Hello there! Im thrilled to welcome you to my portfolio. I am a
         passionate and versatile full-stack developer with a keen interest in
         exploring the latest cutting-edge technologies. My journey in the world
         of web development has been nothing short of exhilarating, and I
