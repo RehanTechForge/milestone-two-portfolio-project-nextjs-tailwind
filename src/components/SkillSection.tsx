@@ -1,26 +1,33 @@
+import {
+  FaLaptopCode,
+  FaMobileAlt,
+  FaPalette,
+  FaChalkboardTeacher,
+} from "react-icons/fa";
+
 const SkillsSection = () => {
   const skills = [
     {
       title: "Web Development",
-      icon: "💻",
+      icon: <FaLaptopCode />, // Using react-icons for web development
       description:
         "As a developer, I find myself most captivated by the power and flexibility of NEXT.js. I'm always eager to dive into new projects that leverage NEXT.js and discover innovative ways to create fast, scalable, and user-friendly applications.",
     },
     {
       title: "App Development",
-      icon: "📱",
+      icon: <FaMobileAlt />, // Using react-icons for app development
       description:
         "With a focus on user-centric design and cutting-edge technologies, I thrive on building intuitive and efficient apps that make a positive impact on people's lives. Let's turn ideas into reality and shape the future together.",
     },
     {
       title: "UI/UX Designing",
-      icon: "🎨",
+      icon: <FaPalette />, // Using react-icons for UI/UX designing
       description:
         "Crafting visually appealing and intuitive user interfaces that offer a delightful user experience is something I'm truly fanatic about.",
     },
     {
       title: "Mentorship",
-      icon: "👨‍🏫",
+      icon: <FaChalkboardTeacher />, // Using react-icons for mentorship
       description:
         "I have also found great joy in sharing my knowledge with others. Being a technical mentor allows me to give back to the community that has supported me throughout my career.",
     },
